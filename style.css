@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+* {
+    font-family: Inter;
+    box-sizing: border-box;
+    margin: 0;
+}
+p, h1, h2, h3, h4 {
+    cursor: default;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    display: block;
+}
+.card img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.card img:hover {
+    width: 150px;
+    height: 150px;
+    transition: all 1s
+}
+.card img:not(hover) {
+    width: 125px;
+    height: 125px;
+    transition: all 1s
+}
+.card > * {
+    text-align: center;
+    color: white;
+}
+.card .name {
+    font-size: 32px;
+}
+.card .location p {
+    color: hsl(75, 94%, 57%);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.card .description p {
+    margin-bottom: 30px;
+}
+
+.card .list {
+    display: grid;
+    gap: 20px;
+}
+.card .list > *:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+    font-size: 18px;
+    transition: background-color 0.25s, font-size, 0.5s
+}
+.card .list > *:not(:hover) {
+    background-color: hsl(0, 0%, 20%);
+    font-size: 14px;
+    transition: background-color 0.5s, font-size 0.4s
+}
+
+.card .list div {
+    background-color:hsl(0, 0%, 20%);
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
